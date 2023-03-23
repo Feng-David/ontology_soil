@@ -1,0 +1,1055 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#"
+     xml:base="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#下辖 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#下辖">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#属于"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#主要污染物 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#主要污染物">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#特征污染物"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#产业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#化学品"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#产业类型 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#产业类型">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#产业"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#位于 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#位于">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#土壤"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#包气带土层 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#包气带土层">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#土壤"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#土地利用 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#土地利用">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#土地利用"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#属于 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#属于">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#特征污染物 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#特征污染物">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#化学品"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#特色产业 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#特色产业">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#产业类型"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#产业"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#饱和带土层 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#饱和带土层">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#土壤"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#CAS号码 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#CAS号码">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#化学品"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#GDP -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#GDP">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#PH -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#PH">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#化学品"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#土壤"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#一般公共预算支出 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#一般公共预算支出">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#一般公共预算收入 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#一般公共预算收入">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#中学在校生人数 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#中学在校生人数">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#主要成分 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#主要成分">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#化学品"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#主要用途 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#主要用途">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#化学品"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#事故次数 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#事故次数">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#二氧化碳排放量 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#二氧化碳排放量">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#土壤"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#产区有工业废水管线 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#产区有工业废水管线">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#人均GDP -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#人均GDP">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#企业有易迁移污染物 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#企业有易迁移污染物">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#企业注册类型 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#企业注册类型">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#企业规模 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#企业规模">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#侵入途径 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#侵入途径">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#化学品"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#健康危害 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#健康危害">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#化学品"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#储存区面积 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#储存区面积">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#公园和绿地面积 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#公园和绿地面积">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#其他危害作用 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#其他危害作用">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#化学品"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#农业占地面积 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#农业占地面积">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#刺激性 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#刺激性">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#化学品"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#厂区存在产品、原料输送管线 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#厂区存在产品、原料输送管线">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#厂区存在无硬化排水沟 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#厂区存在无硬化排水沟">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#厂区是否有防渗措施 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#厂区是否有防渗措施">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#含水率 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#含水率">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#土壤"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#固废存储或处置区面积 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#固废存储或处置区面积">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地下水可见油状物质 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地下水可见油状物质">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地下水埋深 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地下水埋深">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地下水有异味 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地下水有异味">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块中心纬度 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块中心纬度">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块中心经度 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块中心经度">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块临近地表水用途 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块临近地表水用途">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块位于工业聚集区 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块位于工业聚集区">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块内设施严重破损 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块内设施严重破损">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块内遗留危险废弃物 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块内遗留危险废弃物">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块占地面积 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块占地面积">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块可见土壤污染痕迹 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块可见土壤污染痕迹">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块周边人口数量 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块周边人口数量">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块周边地下水异常情况 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块周边地下水异常情况">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块周边是否发生过污染事故 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块周边是否发生过污染事故">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块土壤有异常气味 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块土壤有异常气味">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块规划用途 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块规划用途">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#塑性 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#塑性">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#土壤"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#密度 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#密度">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#土壤"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#导电率 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#导电率">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#土壤"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#小学在校生人数 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#小学在校生人数">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#层曾有过土壤污染记录 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#层曾有过土壤污染记录">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#工业固废综合利用率 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#工业固废综合利用率">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#工业废水排放量 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#工业废水排放量">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#工业粉尘排放量 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#工业粉尘排放量">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#年降水量 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#年降水量">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#应急处理 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#应急处理">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#化学品"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#建设用地占地面积 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#建设用地占地面积">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#开始运营时间 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#开始运营时间">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#急性毒性 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#急性毒性">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#化学品"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#户籍人口 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#户籍人口">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#接近或进入地块可能性 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#接近或进入地块可能性">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#是否有人工填土层 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#是否有人工填土层">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#曾有过地下水污染记录 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#曾有过地下水污染记录">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#棉花产量 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#棉花产量">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#水资源总量 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#水资源总量">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#污染物危害效应 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#污染物危害效应">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#污染物挥发效应 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#污染物挥发效应">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#污染物迁移效应 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#污染物迁移效应">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#油料产量 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#油料产量">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#溶解性 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#溶解性">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#化学品"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#熔点 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#熔点">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#化学品"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#环境危害 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#环境危害">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#化学品"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#生产区面积 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#生产区面积">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#生态毒性 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#生态毒性">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#化学品"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#生物富集或累积性 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#生物富集或累积性">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#化学品"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#生物降解性 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#生物降解性">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#化学品"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#第一产业增加值 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#第一产业增加值">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#第三产业增加值 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#第三产业增加值">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#第二产业从业人数 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#第二产业从业人数">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#第二产业增加值 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#第二产业增加值">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#粒径 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#粒径">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#土壤"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#结束运营时间 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#结束运营时间">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#自行处置废弃物 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#自行处置废弃物">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#行政区域面积 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#行政区域面积">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#规模工业企业数量 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#规模工业企业数量">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#调查显示土壤污染 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#调查显示土壤污染">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#调查显示地下水污染 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#调查显示地下水污染">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#重点区域内是否有未硬化地面 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#重点区域内是否有未硬化地面">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#风险评估得分 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#风险评估得分">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#饱和带渗透性 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#饱和带渗透性">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#产业 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#产业"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#化学品 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#化学品"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#土地利用 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#土地利用"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#土壤 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#土壤"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#产业"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#化学品"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#县区"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#土地利用"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#土壤"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#地块"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hfeng/ontologies/2023/2/untitled-ontology-4#城市"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
